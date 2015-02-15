@@ -1,0 +1,24 @@
+{
+  "name": "df-carousel",
+  "version": "0.0.1",
+  "description": "AngularJs Carousel module",
+  "authors": [
+    "Davide Fiorello"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/codeflyer/df-carousel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.3.13"
+  },
+  "dependencies": {
+    "angular": "~1.3.13",
+    "angular-sanitize": "~1.3.13"
+  }
+}

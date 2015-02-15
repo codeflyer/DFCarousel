@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="sample-app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+</head>
+<body ng-controller="sampleCtrl">
+
+<h1>Top 2014 photos from Flickr</h1>
+<df-carousel item-list="imageList" class="my-class"></df-carousel>
+<br/><br/>
+<div df-carousel item-list="imageList" class="my-class"></div>
+<br/><br/>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/dist/dfcarousel.js"></script>
+<script type="text/javascript">
+    angular.module('sample-app', ['df.carousel'])
+
+            .controller('sampleCtrl', function($scope) {
+                console.log('Prova')
+                $scope.imageList = [
+                    'https://farm6.staticflickr.com/5548/11874722676_6450fcb8ba_b.jpg',
+                    'https://farm8.staticflickr.com/7290/12580204845_f52d1ca5ea_b.jpg',
+                    'https://c2.staticflickr.com/6/5511/12794222613_d603f238ae_k.jpg',
+                    'https://c4.staticflickr.com/4/3820/12072442804_f13ee43626_b.jpg',
+                    'https://c4.staticflickr.com/8/7457/13083922194_d055bebcb2_b.jpg',
+                    'https://c4.staticflickr.com/8/7376/14074411192_460fc8c511_z.jpg',
+                    'https://c2.staticflickr.com/6/5488/11823346895_c7e40e901f_h.jpg',
+                    'https://c4.staticflickr.com/4/3672/12037085896_a6570792c9_b.jpg',
+                    'https://c2.staticflickr.com/6/5480/11940967944_f9b992c93c_b.jpg',
+                    'https://c4.staticflickr.com/8/7035/13992456111_7282330278_b.jpg'
+                ];
+            }
+    );
+</script>
+
+</body>
+</html>

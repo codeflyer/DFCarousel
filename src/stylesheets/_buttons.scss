@@ -1,0 +1,35 @@
+.df-carousel {
+    $buttonHoverChangeTime : .15s;
+    .carousel-button {
+        background-color: rgba(255, 252, 152, 0.56);
+        opacity: 0.2;
+
+        -webkit-transition: opacity $buttonHoverChangeTime ease-in-out;
+        -moz-transition: opacity $buttonHoverChangeTime ease-in-out;
+        -ms-transition: opacity $buttonHoverChangeTime ease-in-out;
+        -o-transition: opacity $buttonHoverChangeTime ease-in-out;
+        transition: opacity $buttonHoverChangeTime ease-in-out;
+
+        &.left {
+            @extend %data-arrow-left;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.right {
+            @extend %data-arrow-right;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:hover {
+            opacity: 0.8;
+            -webkit-transition: opacity $buttonHoverChangeTime ease-in-out;
+            -moz-transition: opacity $buttonHoverChangeTime ease-in-out;
+            -ms-transition: opacity $buttonHoverChangeTime ease-in-out;
+            -o-transition: opacity $buttonHoverChangeTime ease-in-out;
+            transition: opacity $buttonHoverChangeTime ease-in-out;
+        }
+    }
+}
+
