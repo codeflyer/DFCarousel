@@ -1,29 +1,19 @@
 DFCarousel
 =======
 
-#install
-
-```
-npm install
-bower update
-grunt dist
-```
-
-Note:
-(MacOsX)
-If the installation of your node.js is made as a root user the npm install can fail.
-The problem is given by the first installation of phantom.js. Retry install with
-```
-sudo npm install
-```
-
-##run test
-```
-grunt test
-```
-
 #Quick start
+```
+bower install df-carousel
+```
+
 ```html
+<link rel="stylesheet" type="text/css" href="/bower_components/df-carousel/dist/style.css">
+
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/bower_components/df-carousel/dist/dfcarousel.js"></script>
+
+
 <script type="text/javascript">
     angular.module('sample-app', ['df.carousel'])
             .controller('sampleCtrl', function($scope) {
@@ -40,7 +30,7 @@ grunt test
 </script>
 
 <div df-carousel item-list="imageList" class="my-class"></div>
-or 
+or
 <df-carousel item-list="imageList" class="my-class"></df-carousel>
 ```
 
@@ -74,3 +64,29 @@ The buttons are referred by the class
 .df-carousel .carousel-button.left // the left button
 .df-carousel .carousel-button.right // the right button
 ```
+
+
+# Developers
+
+##install
+
+
+```
+npm install
+bower update
+grunt dist
+```
+
+Note:
+(MacOsX)
+If the installation of your node.js is made as a root user the npm install can fail.
+The problem is given by the first installation of phantom.js. Retry install with
+```
+sudo npm install
+```
+
+##run test
+```
+grunt test
+```
+
