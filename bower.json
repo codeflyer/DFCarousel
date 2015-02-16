@@ -5,6 +5,10 @@
   "authors": [
     "Davide Fiorello"
   ],
+  "main": [
+    "dist/dfcarousel.js",
+    "dist/style.css"
+  ],
   "license": "MIT",
   "homepage": "http://github.com/codeflyer/df-carousel",
   "ignore": [
