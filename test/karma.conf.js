@@ -27,7 +27,7 @@ module.exports = function(config) {
       'src/app/carousel.module.js',
       'src/app/**/*.js',
       'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      'test/spec/services/**/*.js'
     ],
 
     // list of files / patterns to exclude
